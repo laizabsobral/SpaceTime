@@ -56,7 +56,7 @@ module.exports = {
       },
 
       fontSize: {
-        "5xl": "2.5rem",
+        "5xl": "2.2rem",
       },
 
       backgroundSize: {
