@@ -1,6 +1,7 @@
 import { User } from "lucide-react";
 import Image from "next/image";
-import nlwLogo from "../assets/nlw-spacetime-logo.svg";
+// import nlwLogo from "";
+// import nlwLogo from "../assets/nlw-spacetime-logo.svg";
 export default function Home() {
   return (
     <main className="grid grid-cols-2 min-h-screen">
@@ -13,7 +14,7 @@ export default function Home() {
 
         {/* Sign in */}
         <a
-          href=""
+          href={`https://github.com/login/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}`}
           className="flex items-center gap-3 text-left hover:text-gray-50 transition-colors"
         >
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-400">
@@ -29,7 +30,7 @@ export default function Home() {
 
         {/* Hero */}
         <div className="space-y-5">
-          <Image src={nlwLogo} alt="NLW Logo" />
+          {/* <Image src={nlwLogo} alt="NLW Logo" /> */}
           <div className="max-w-[420px] space-y-1">
             <h1 className="text-5xl font-bold leading-tight text-gray-50">
               Sua cápsula do tempo
